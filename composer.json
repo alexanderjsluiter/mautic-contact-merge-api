@@ -1,0 +1,25 @@
+{
+  "name": "asluiter/mautic-contact-merge-api",
+  "version": "1.0.0",
+  "type": "mautic-plugin",
+  "description": "A plugin that provides a contact merge API endpoint.",
+  "license": "Alex",
+  "authors": [
+    {
+      "name": "Alexander Sluiter",
+      "email": "alex@eliteproductsgroupinc.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "mautic/core-lib": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "MauticPlugin\\MauticContactMergeApiBundle\\": ""
+    }
+  },
+  "extra": {
+    "install-directory-name": "MauticContactMergeApiBundle"
+  }
+}
