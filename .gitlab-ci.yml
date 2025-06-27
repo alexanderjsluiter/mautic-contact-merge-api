@@ -2,8 +2,8 @@ stages:
   - deploy
 
 deploy:
-  # only:
-  #   - tags
+  only:
+    - tags
   stage: deploy
   image: alpine:latest
   tags:
