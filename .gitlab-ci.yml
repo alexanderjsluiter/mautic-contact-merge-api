@@ -11,6 +11,6 @@ deploy:
   script:
     - apk add curl ca-certificates
     - ls /etc/gitlab-runner/
-    - cp /etc/gitlab-runner/epgi-prod-ca.crt /usr/local/share/ca-certificates/
+    - cp /tls/epgi-prod-ca.crt /usr/local/share/ca-certificates/
     - update-ca-certificates
     - 'curl --fail-with-body --header "Job-Token: $CI_JOB_TOKEN" --data tag=$CI_COMMIT_TAG "${CI_API_V4_URL}/projects/$CI_PROJECT_ID/packages/composer"'
